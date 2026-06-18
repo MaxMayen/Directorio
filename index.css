@@ -1,0 +1,105 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #a9a9a9;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 40px 5%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+                                                   /* DEBO DEJAR DE HACER ESTO A LAS 3 AM */
+
+h1 {
+    color: #ffe4c4;
+    border-bottom: 2px solid #a9a9a9;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+p {
+    color: #a9a9a9;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 600px;
+}
+
+#buscador {
+    width: 100%;
+    max-width: 500px;
+    background-color: #1a1a1a;
+    color: #ffe4c4;
+    border: 1px solid #696969;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    padding: 15px;
+    margin-bottom: 25px;
+    outline: none;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+#buscador:focus {
+    border-color: #ffe4c4;
+}
+
+.menu-container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-enlace {
+    display: block;
+    background-color: #696969;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-enlace:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+
+    #buscador {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+
+    .btn-enlace {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+}
